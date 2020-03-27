@@ -3,7 +3,7 @@ import { normalize } from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
-console.log('imtheme', props.theme);
+
   body {
     width: 80%;
     padding: 0;
