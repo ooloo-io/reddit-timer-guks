@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   body {
-    width: 80%;
     padding: 0;
     background-color: ${({ theme }) => theme.colors.grayLight};
     line-height: 1.5;
@@ -16,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
   a {
       text-decoration: none;
       color: ${({ theme }) => theme.colors.primary};
+  }
+
+  .container {
+    max-width: 1440px;
   }
 `;
 

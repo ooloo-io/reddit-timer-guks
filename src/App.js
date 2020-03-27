@@ -8,17 +8,19 @@ import {
 
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
+import Header from './components/Header/Header';
 
 import Theme from './shared/styles/theme.styles';
 import GlobalStyle from './shared/styles/global.styles';
-
+import AppWrapper from './App.styles';
 
 function App() {
   return (
     <Theme>
-      <div>
+      <AppWrapper>
         <GlobalStyle />
         <Router>
+          <Header />
           <Switch>
             <Route path="/" exact>
               <Home />
@@ -29,7 +31,7 @@ function App() {
             <Redirect to="/" />
           </Switch>
         </Router>
-      </div>
+      </AppWrapper>
     </Theme>
   );
 }
