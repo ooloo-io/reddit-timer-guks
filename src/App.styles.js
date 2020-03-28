@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 
 export const AppWrapper = styled.div`
@@ -6,4 +5,8 @@ export const AppWrapper = styled.div`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
+`;
+
+export const AppMainWrapper = styled.main`
+  height: calc(100vh - ${({ theme }) => theme.sizes.headerHeight} - ${({ theme }) => theme.sizes.footerHeight})
 `;

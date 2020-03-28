@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FooterWrapper, FooterLinkContainer, Logo } from './Footer.styles';
+import Logo from '../../assets/images/sign.svg';
+import { FooterWrapper, FooterLinkContainer, LogoContainer } from './Footer.styles';
 
 
 const Footer = () => (
@@ -12,7 +13,7 @@ const Footer = () => (
     </FooterLinkContainer>
     <FooterLinkContainer>
       <Link to="/">
-        <Logo />
+        <LogoContainer src={Logo} />
       </Link>
     </FooterLinkContainer>
     <FooterLinkContainer>

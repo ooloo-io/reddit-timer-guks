@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ReactComponent as LogoSVG } from '../../assets/images/logo.svg';
 
 export const HeaderWrapper = styled.header`
-  height: 100px;
+  height: ${({ theme }) => theme.sizes.headerHeight};
   display: flex;
   justify-content: space-between;
   margin-right: 80px;

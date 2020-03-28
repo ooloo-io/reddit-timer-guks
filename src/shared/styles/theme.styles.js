@@ -13,6 +13,10 @@ const theme = {
     primary: 'Montserrat',
     secondary: 'Bitter',
   },
+  sizes: {
+    headerHeight: '100px',
+    footerHeight: '100px',
+  },
 };
 
 const Theme = ({ children }) => (
