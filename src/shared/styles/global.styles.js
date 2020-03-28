@@ -17,9 +17,6 @@ const GlobalStyle = createGlobalStyle`
       color: ${({ theme }) => theme.colors.primary};
   }
 
-  .container {
-    max-width: 1440px;
-  }
 `;
 
 export default GlobalStyle;

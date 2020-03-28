@@ -12,7 +12,7 @@ import Header from './components/Header/Header';
 
 import Theme from './shared/styles/theme.styles';
 import GlobalStyle from './shared/styles/global.styles';
-import AppWrapper from './App.styles';
+import { AppWrapper } from './App.styles';
 
 function App() {
   return (
