@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const theme = {
   colors: {
-    textPrimary: '#636363',
+    primary: '#636363',
     grayDark: '#00000',
     grayLight: '#ffffff',
     grayBase: '#93918f',
