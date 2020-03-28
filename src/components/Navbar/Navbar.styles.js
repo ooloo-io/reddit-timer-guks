@@ -15,11 +15,10 @@ export const NavbarUl = styled.ul`
 `;
 
 export const NavbarLi = styled.li`
-  margin-right: 25px;
+  margin-right: 26px;
   margin-bottom: 5px;
   &:last-child{
     margin-right: 0;
-    padding-left: 0.1rem;
   }
 `;
 
