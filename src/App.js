@@ -9,10 +9,11 @@ import {
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import Theme from './shared/styles/theme.styles';
 import GlobalStyle from './shared/styles/global.styles';
-import { AppWrapper } from './App.styles';
+import { AppWrapper, AppMainWrapper } from './App.styles';
 
 function App() {
   return (
@@ -21,15 +22,18 @@ function App() {
         <GlobalStyle />
         <Router>
           <Header />
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/search" exact>
-              <Search />
-            </Route>
-            <Redirect to="/" />
-          </Switch>
+          <AppMainWrapper>
+            <Switch>
+              <Route path="/" exact>
+                <Home />
+              </Route>
+              <Route path="/search" exact>
+                <Search />
+              </Route>
+              <Redirect to="/" />
+            </Switch>
+          </AppMainWrapper>
+          <Footer />
         </Router>
       </AppWrapper>
     </Theme>
