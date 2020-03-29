@@ -20,9 +20,9 @@ const HeroSection = () => (
       <CTAButton type="button" cta="SHOW ME THE BEST TIME" />
     </HeroSectionButtonLinkWrapper>
     <HeroSectionP>
-      <Link to="/search?q=javascript">r/javascript</Link>
+      r/javascript
     </HeroSectionP>
-    <TableContainer><Table /></TableContainer>
+    <TableContainer><Link to="/search"><Table /></Link></TableContainer>
   </HeroSectionWrapper>
 );
 
