@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import TablePNG from './table.png';
+
 
 export const HeroSectionWrapper = styled.div`
   display: flex;
@@ -37,7 +39,7 @@ export const HeroSectionP = styled.p`
 }
 `;
 
-export const HeroSectionButtonWrapper = styled.div`
+export const HeroSectionButtonLinkWrapper = styled(Link)`
   margin-top: 31px;
   margin-bottom: 30px;
   margin-left: 2px;

@@ -5,7 +5,7 @@ import {
   HeroSectionWrapper,
   HeroSectionTitle,
   HeroSectionP,
-  HeroSectionButtonWrapper,
+  HeroSectionButtonLinkWrapper,
   Table,
   TableContainer,
 } from './HeroSection.styles';
@@ -16,9 +16,9 @@ const HeroSection = () => (
     <HeroSectionP>
       Great timing, great results! Find the best time to post on your subreddit.
     </HeroSectionP>
-    <HeroSectionButtonWrapper>
+    <HeroSectionButtonLinkWrapper to="/search?q=javascript">
       <CTAButton type="button" cta="SHOW ME THE BEST TIME" />
-    </HeroSectionButtonWrapper>
+    </HeroSectionButtonLinkWrapper>
     <HeroSectionP>
       <Link to="/search?q=javascript">r/javascript</Link>
     </HeroSectionP>
