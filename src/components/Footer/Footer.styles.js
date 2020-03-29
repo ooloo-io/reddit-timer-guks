@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as LogoSVG } from './sign.svg';
 
 export const FooterWrapper = styled.footer`
   height: ${({ theme }) => theme.sizes.footerHeight};
@@ -14,7 +15,7 @@ export const FooterLinkContainer = styled.span`
   font-size: 14px;
 `;
 
-export const LogoContainer = styled.img`
+export const Logo = styled(LogoSVG)`
   width: 36px;
   height: 36px;
   padding-left: 57px;
