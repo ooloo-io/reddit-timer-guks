@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import TablePNG from './table.png';
-
+import HeatMapPNG from './table.png';
+import { CTAButton } from '../CTAButton/CTAButton.styles';
 
 export const HeroSectionWrapper = styled.div`
   display: flex;
@@ -10,7 +9,7 @@ export const HeroSectionWrapper = styled.div`
   align-items: center;
 `;
 
-export const HeroSectionTitle = styled.h1`
+export const Title = styled.h1`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: 38px;
   font-weight: normal;
@@ -19,12 +18,12 @@ export const HeroSectionTitle = styled.h1`
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 4px;
   color: ${({ theme }) => theme.colors.grayDark};
 `;
 
-export const HeroSectionP = styled.p`
+export const SubLine = styled.p`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: 16px;
   font-weight: normal;
@@ -39,19 +38,16 @@ export const HeroSectionP = styled.p`
 }
 `;
 
-export const HeroSectionButtonLinkWrapper = styled(Link)`
+export const Button = styled(CTAButton)`
   margin-top: 31px;
   margin-bottom: 30px;
   margin-left: 2px;
 `;
 
-export const TableContainer = styled.div`
+export const HeatMap = styled.div`
   display: flex;
   align-self: center;
-`;
-
-export const Table = styled.div`
-  background-image: url(${TablePNG});
+  background-image: url(${HeatMapPNG});
   width: 1114px;
   height: 332px;
   margin-top: 21px;

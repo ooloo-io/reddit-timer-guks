@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // eslint-disable-next-line import/prefer-default-export
-export const CTAButtonStyled = styled.button`
+export const CTAButton = styled.button`
   background: ${({ theme }) => theme.colors.buttonBg};
   color: white;
   text-decoration: none;  
