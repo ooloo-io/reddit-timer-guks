@@ -6,7 +6,9 @@ export const InfoSectionWrapper = styled.section`
   align-items: center;
   justify-content: center;
   margin-top: 127px;
+  margin-bottom: 2px;
 `;
+
 export const Info = styled.div`
   display: flex;
   width: 738px;
@@ -20,9 +22,6 @@ export const Info = styled.div`
   font-style: normal;
   line-height: 1.69;
   letter-spacing: 0.03px;
-  a {
-    color: ${({ theme }) => theme.colors.link};
-  }
 `;
 
 export const Title = styled.h2`

@@ -1,24 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FooterWrapper, FooterLinkContainer, Logo } from './Footer.styles';
+import {
+  FooterWrapper,
+  FooterLinkContainer,
+  Logo,
+  StyledA,
+  StyledLink,
+} from './Footer.styles';
 
 
 const Footer = () => (
   <FooterWrapper>
     <FooterLinkContainer>
-      <a href="https://ooloo.io" target="_blank" rel="noopener noreferrer">
+      <StyledA href="https://ooloo.io" target="_blank" rel="noopener noreferrer">
         ooloo.io
-      </a>
+      </StyledA>
     </FooterLinkContainer>
     <FooterLinkContainer>
-      <Link to="/">
+      <StyledLink to="/">
         <Logo />
-      </Link>
+      </StyledLink>
     </FooterLinkContainer>
     <FooterLinkContainer>
-      <Link to="/terms">
+      <StyledLink to="/terms">
         Terms & Privacy
-      </Link>
+      </StyledLink>
     </FooterLinkContainer>
   </FooterWrapper>
 );
