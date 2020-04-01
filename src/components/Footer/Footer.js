@@ -3,7 +3,6 @@ import {
   FooterWrapper,
   FooterLinkContainer,
   Logo,
-  Anchor,
   Link,
 } from './Footer.styles';
 
@@ -11,9 +10,9 @@ import {
 const Footer = () => (
   <FooterWrapper>
     <FooterLinkContainer>
-      <Anchor href="https://ooloo.io" target="_blank" rel="noopener noreferrer">
+      <Link as="a" href="https://ooloo.io" target="_blank" rel="noopener noreferrer">
         ooloo.io
-      </Anchor>
+      </Link>
     </FooterLinkContainer>
     <FooterLinkContainer>
       <Link to="/">

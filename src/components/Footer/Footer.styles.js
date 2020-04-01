@@ -16,10 +16,6 @@ export const FooterLinkContainer = styled.span`
   font-size: 14px;
 `;
 
-export const Anchor = styled.a`
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
 export const Link = styled(RawLink)`
   color: ${({ theme }) => theme.colors.primary};
 `;
