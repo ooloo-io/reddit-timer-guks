@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as RawLink } from 'react-router-dom';
 import { ReactComponent as LogoSVG } from './sign.svg';
 
 export const FooterWrapper = styled.footer`
@@ -16,11 +16,11 @@ export const FooterLinkContainer = styled.span`
   font-size: 14px;
 `;
 
-export const StyledA = styled.a`
+export const Anchor = styled.a`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const StyledLink = styled(Link)`
+export const Link = styled(RawLink)`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
