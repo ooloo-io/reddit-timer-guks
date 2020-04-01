@@ -5,6 +5,7 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
+import { QueryParamProvider } from 'use-query-params';
 
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
@@ -21,19 +22,21 @@ function App() {
       <AppWrapper>
         <GlobalStyle />
         <Router>
-          <Header />
-          <AppMainWrapper>
-            <Switch>
-              <Route path="/" exact>
-                <Home />
-              </Route>
-              <Route path="/search" exact>
-                <Search />
-              </Route>
-              <Redirect to="/" />
-            </Switch>
-          </AppMainWrapper>
-          <Footer />
+          <QueryParamProvider ReactRouterRoute={Route}>
+            <Header />
+            <AppMainWrapper>
+              <Switch>
+                <Route path="/" exact>
+                  <Home />
+                </Route>
+                <Route path="/search" exact>
+                  <Search />
+                </Route>
+                <Redirect to="/" />
+              </Switch>
+            </AppMainWrapper>
+            <Footer />
+          </QueryParamProvider>
         </Router>
       </AppWrapper>
     </Theme>
