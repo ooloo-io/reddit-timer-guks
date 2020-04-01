@@ -8,5 +8,5 @@ export const AppWrapper = styled.div`
 `;
 
 export const AppMainWrapper = styled.main`
-  height: calc(100vh - ${({ theme }) => theme.sizes.headerHeight} - ${({ theme }) => theme.sizes.footerHeight})
+  min-height: calc(100vh - ${({ theme }) => theme.sizes.headerHeight} - ${({ theme }) => theme.sizes.footerHeight})
 `;

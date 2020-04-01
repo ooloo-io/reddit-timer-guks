@@ -5,11 +5,12 @@ import PropTypes from 'prop-types';
 const theme = {
   colors: {
     primary: '#636363',
-    grayDark: '#00000',
+    grayDark: '#000000',
     grayLight: '#ffffff',
     grayBase: '#93918f',
     buttonBg: '#fdb755',
     buttonBgEffect: '#fca223',
+    link: '#0087ff',
   },
   fonts: {
     primary: 'Montserrat',
