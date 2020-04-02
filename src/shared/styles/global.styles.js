@@ -17,6 +17,18 @@ const GlobalStyle = createGlobalStyle`
       color: ${({ theme }) => theme.colors.link};
   }
 
+  h1 {
+    font-family: ${({ theme }) => theme.fonts.secondary};
+    font-size: 38px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: ${({ theme }) => theme.colors.grayDark};
+  }
+
 `;
 
 export default GlobalStyle;

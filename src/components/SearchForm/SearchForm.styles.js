@@ -7,17 +7,8 @@ export const SearchFormWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: ${({ theme }) => theme.fonts.secondary};
-  font-size: 38px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  margin-top: 26px;
+  margin-top: 24px;
   margin-bottom: 0px;
-  color: ${({ theme }) => theme.colors.grayDark};
 `;
 
 export const Form = styled.form`
@@ -38,19 +29,5 @@ export const Prefix = styled.div`
   line-height: 0.5;
   letter-spacing: normal;
   text-align: center;
-  color: ${({ theme }) => theme.colors.grayPrefix};
-`;
-
-export const Input = styled.input`
-  width: 352px;
-  height: 34px;
-  border-radius: 2px;
-  border: solid 1px ${({ theme }) => theme.colors.border};
-  background-color: ${({ theme }) => theme.colors.grayLight};
-  font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: 14px;
-  color:  ${({ theme }) => theme.colors.grayDark};
-  padding-left: 16px;
-  margin-left: 10px;
-  margin-right: 10px;
+  color: ${({ theme }) => theme.colors.grayMediumLight};
 `;

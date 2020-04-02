@@ -5,10 +5,9 @@ import {
   Title,
   Form,
   Prefix,
-  Input,
 } from './SearchForm.styles';
-
-import { CTAButton } from '../CTAButton/CTAButton.styles';
+import Input from '../Input/Input';
+import CTAButton from '../CTAButton/CTAButton';
 
 const SearchForm = () => {
   const [subreddit, setSubreddit] = useQueryParam('q', StringParam);

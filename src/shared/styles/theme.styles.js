@@ -8,7 +8,7 @@ const theme = {
     grayDark: '#000000',
     grayLight: '#ffffff',
     grayBase: '#93918f',
-    grayPrefix: '#9e9e9e',
+    grayMediumLight: '#9e9e9e',
     buttonBg: '#fdb755',
     buttonBgEffect: '#fca223',
     link: '#0087ff',

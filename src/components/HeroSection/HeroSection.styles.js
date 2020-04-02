@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import HeatMapPNG from './table.png';
-import { CTAButton } from '../CTAButton/CTAButton.styles';
+import CTAButton from '../CTAButton/CTAButton';
 
 export const HeroSectionWrapper = styled.div`
   display: flex;
@@ -10,17 +10,8 @@ export const HeroSectionWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: ${({ theme }) => theme.fonts.secondary};
-  font-size: 38px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
   margin-top: 26px;
   margin-bottom: 4px;
-  color: ${({ theme }) => theme.colors.grayDark};
 `;
 
 export const SubLine = styled.p`
