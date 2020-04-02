@@ -1,6 +1,11 @@
 import React from 'react';
+import SearchForm from '../../components/SearchForm/SearchForm';
 
-const Search = () => <div>Search Page placeholder</div>;
+const Search = () => (
+  <div>
+    <SearchForm />
+  </div>
+);
 
 
 export default Search;

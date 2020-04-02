@@ -8,9 +8,11 @@ const theme = {
     grayDark: '#000000',
     grayLight: '#ffffff',
     grayBase: '#93918f',
+    grayMediumLight: '#9e9e9e',
     buttonBg: '#fdb755',
     buttonBgEffect: '#fca223',
     link: '#0087ff',
+    border: '#e6e6e6',
   },
   fonts: {
     primary: 'Montserrat',
