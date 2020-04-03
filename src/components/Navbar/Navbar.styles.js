@@ -1,32 +1,29 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as RawLink } from 'react-router-dom';
 
 export const NavbarContainer = styled.nav`
   display: flex;
 `;
 
-export const NavbarUl = styled.ul`
+export const List = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
   list-style-type: none;
-
-}
 `;
 
-export const NavbarLi = styled.li`
+export const ListItem = styled.li`
   margin-right: 26px;
   margin-bottom: 5px;
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 `;
 
-export const NavbarStyledLink = styled(Link)`
+export const Link = styled(RawLink)`
   color: ${({ theme }) => theme.colors.primary};
   &:focus, &:hover, &:visited, &:link, &:active {
-      text-decoration: none;
-      
+      text-decoration: none;      
   }
   &:focus, &:hover {
     color: ${({ theme }) => theme.colors.grayBase};
