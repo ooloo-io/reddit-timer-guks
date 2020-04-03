@@ -1,18 +1,19 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import {
   NavbarContainer,
-  NavbarUl,
-  NavbarLi,
-  NavbarStyledLink,
+  List,
+  ListItem,
+  Link,
 } from './Navbar.styles';
 
 const Navbar = () => (
   <NavbarContainer>
-    <NavbarUl>
-      <NavbarLi><NavbarStyledLink to="/search?q=javascript">Search</NavbarStyledLink></NavbarLi>
-      <NavbarLi><NavbarStyledLink to="/#how-it-works">How it works</NavbarStyledLink></NavbarLi>
-      <NavbarLi><NavbarStyledLink to="/#about">About</NavbarStyledLink></NavbarLi>
-    </NavbarUl>
+    <List>
+      <ListItem><Link to="/search?q=javascript">Search</Link></ListItem>
+      <ListItem><Link as={HashLink} to="/#how-it-works">How it works</Link></ListItem>
+      <ListItem><Link as={HashLink} to="/#about">About</Link></ListItem>
+    </List>
   </NavbarContainer>
 );
 

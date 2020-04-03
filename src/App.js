@@ -15,7 +15,6 @@ import Footer from './components/Footer/Footer';
 import Theme from './shared/styles/theme.styles';
 import GlobalStyle from './shared/styles/global.styles';
 import { AppWrapper, AppMainWrapper } from './App.styles';
-import ScrollHandler from './components/ScrollHandler/ScrollHandler';
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
       <AppWrapper>
         <GlobalStyle />
         <Router>
-          <ScrollHandler />
+          {/*           <ScrollHandler /> */}
           <QueryParamProvider ReactRouterRoute={Route}>
             <Header />
             <AppMainWrapper>

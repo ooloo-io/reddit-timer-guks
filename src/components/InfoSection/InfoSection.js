@@ -9,7 +9,7 @@ import {
 
 const InfoSection = () => (
   <InfoSectionWrapper>
-    <Info id="#how-it-works">
+    <Info id="how-it-works">
       <Title>How it works</Title>
       <Body>
         <List>
@@ -19,7 +19,7 @@ const InfoSection = () => (
         </List>
       </Body>
     </Info>
-    <Info id="#about">
+    <Info id="about">
       <Title>About</Title>
       <Body>
         This app was created during a course on
