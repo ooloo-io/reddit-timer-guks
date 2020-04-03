@@ -22,7 +22,6 @@ function App() {
       <AppWrapper>
         <GlobalStyle />
         <Router>
-          {/*           <ScrollHandler /> */}
           <QueryParamProvider ReactRouterRoute={Route}>
             <Header />
             <AppMainWrapper>
