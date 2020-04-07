@@ -1,9 +1,10 @@
 import React from 'react';
-import { SpinnerWrapper, SpinnerImage } from './Spinner.styles';
+import { SpinnerWrapper } from './Spinner.styles';
+import { ReactComponent as SpinnerSVG } from './loading-spinner.svg';
 
 const Spinner = () => (
   <SpinnerWrapper>
-    <SpinnerImage aria-label="spinner" />
+    <SpinnerSVG aria-label="spinner" />
   </SpinnerWrapper>
 );
 
