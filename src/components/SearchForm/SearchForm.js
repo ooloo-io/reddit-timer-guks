@@ -1,5 +1,5 @@
-import React from 'react';
-import { useQueryParam, StringParam } from 'use-query-params';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   SearchFormWrapper,
   Title,
@@ -9,19 +9,29 @@ import {
 import Input from '../Input/Input';
 import CTAButton from '../CTAButton/CTAButton';
 
-const SearchForm = () => {
-  const [subreddit, setSubreddit] = useQueryParam('q', StringParam);
+const SearchForm = ({ subreddit, setSubreddit }) => {
+  const [query, setQuery] = useState(subreddit);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubreddit(query);
+  };
 
   return (
     <SearchFormWrapper>
       <Title>Find the best time for a subreddit</Title>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Prefix>r /</Prefix>
-        <Input type="text" value={subreddit} onChange={(e) => setSubreddit(e.target.value)} />
+        <Input type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
         <CTAButton type="submit">Search</CTAButton>
       </Form>
     </SearchFormWrapper>
   );
+};
+
+SearchForm.propTypes = {
+  subreddit: PropTypes.string.isRequired,
+  setSubreddit: PropTypes.func.isRequired,
 };
 
 export default SearchForm;
